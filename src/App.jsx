@@ -12,7 +12,7 @@ const App = () => {
   const [allWaves, setAllWaves] = useState([]);
   const [waveMsg, setWaveMsg] = useState("");
 
-  const contractAddress = "0x3761BA30E5b6141a5Faa753f4311E89d1BD5c081";
+  const contractAddress = "0x9C65B2C87fa0557a74Aa72Db309B466e0183bE1a";
 
   const contractABI = abi.abi;
 
@@ -134,7 +134,6 @@ const App = () => {
         console.log("Ethereum object doesn't exist!")
       }
     } catch (error) {
-      console.log(error);
     }
   }
 
@@ -193,13 +192,13 @@ const App = () => {
           I am Moshe and I worked on my first smart conrtact Token so that's pretty cool right?
 
           <span style={{ display: "block", color: "black", marginTop: 5 }}>
-            Connect your Ethereum wallet and wave at me!
+            Connect your Ethereum wallet and wave to me!
           </span>
         </div>
 
         <textarea
-          rows="4"
-          cols="50"
+          rows="2"
+          cols="20"
           placeholder="Say Hi"
           onChange={(e) => { setWaveMsg(e.target.value) }}
           style={{
